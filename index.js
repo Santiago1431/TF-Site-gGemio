@@ -1,10 +1,10 @@
 import express from "express";
 import dotenv from "dotenv";
-import { selectUsuarios } from "./conectbd";
+import { selectUsuarios } from "/workspaces/TF-Site-gGemio/conectbd.js";
 
 dotenv.config();      
 const app = express();              
-const port = 5000;                  
+const port = 3000;                  
 
 app.get("/", (req, res) => {       
   console.log("Rota Principal solicitada");
